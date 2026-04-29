@@ -33,19 +33,41 @@ This skill is designed for teams working in parallel:
 
 ## Installation
 
+Pick the option that matches your setup:
+
+### Claude Code (terminal)
+
 ```bash
 claude skills install https://shipables.dev/skills/hackathon
 ```
 
-Or from local file:
+That's it. Claude Code will fetch and install the skill automatically.
+
+### Claude.ai (browser)
+
+1. Go to [claude.ai](https://claude.ai) and open any conversation
+2. Click the **Skills** icon in the sidebar (or go to Settings > Skills)
+3. Click **Add Skill** and paste this URL:
+   ```
+   https://shipables.dev/skills/hackathon
+   ```
+4. Click **Install** -- the skill will be available in all your conversations
+
+### Cursor, Copilot, and other compatible agents
+
+Most agents that support Agent Skills use the same install command:
 
 ```bash
-claude skills install hackathon-skill.skill
+npx @senso-ai/shipables install hackathon
 ```
 
-### Claude.ai / Other Agents
+Or check your agent's skill settings and paste the Shipables URL directly. If your agent supports SKILL.md files, you can also download `SKILL.md` from this repo and drop it into your `.claude/skills/` folder (or wherever your agent looks for skills).
 
-Upload the `hackathon-skill.skill` file via your agent's skill settings.
+### Manual install (any agent)
+
+1. Download `SKILL.md` from this repo
+2. Place it in your project under `.claude/skills/hackathon/SKILL.md`
+3. Restart your agent session -- it will pick up the skill automatically
 
 ## Files Included
 
