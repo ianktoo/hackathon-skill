@@ -1,0 +1,108 @@
+<svg width="880" height="330" viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg"
+     font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="880" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#f8f4ff"/>
+      <stop offset="50%"  stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#f0fdf4"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000014"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="880" height="330" rx="16" fill="url(#bg)" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="440" y="38" text-anchor="middle" fill="#1e293b" font-size="17" font-weight="700" letter-spacing="-0.3">How Hackathon Skill Works</text>
+  <text x="440" y="58" text-anchor="middle" fill="#64748b" font-size="12.5">Install the skill. Claude gets full hackathon context. You ship.</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="74" x2="840" y2="74" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- ═══════════════════ BOX 1: Install ═══════════════════ -->
+  <rect x="40" y="88" width="180" height="150" rx="12" fill="#ffffff" stroke="#e9d5ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="40" y="88" width="180" height="3.5" rx="1.75" fill="#a855f7"/>
+
+  <!-- File icon -->
+  <circle cx="130" cy="143" r="26" fill="#faf5ff"/>
+  <rect x="116" y="129" width="28" height="36" rx="3" fill="#a855f7" opacity="0.12"/>
+  <rect x="116" y="129" width="28" height="36" rx="3" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+  <path d="M134,129 L144,139 L134,139 Z" fill="#a855f7" opacity="0.25"/>
+  <path d="M134,129 L144,139" stroke="#a855f7" stroke-width="1.5"/>
+  <line x1="121" y1="149" x2="139" y2="149" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="121" y1="156" x2="139" y2="156" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
+  <line x1="121" y1="163" x2="133" y2="163" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+
+  <text x="130" y="196" text-anchor="middle" fill="#1e293b" font-size="13.5" font-weight="600">Install Skill</text>
+  <text x="130" y="213" text-anchor="middle" fill="#64748b" font-size="11">One command.</text>
+  <text x="130" y="228" text-anchor="middle" fill="#64748b" font-size="11">Claude Code, Claude.ai,</text>
+
+  <!-- ═══════════════════ ARROW 1 ═══════════════════ -->
+  <text x="285" y="158" text-anchor="middle" fill="#94a3b8" font-size="10" font-style="italic">context loads</text>
+  <line x1="228" y1="168" x2="342" y2="168" stroke="#c4b5fd" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <polygon points="342,168 332,163 332,173" fill="#c4b5fd"/>
+
+  <!-- ═══════════════════ BOX 2: Claude ═══════════════════ -->
+  <rect x="350" y="88" width="180" height="150" rx="12" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="350" y="88" width="180" height="3.5" rx="1.75" fill="#3b82f6"/>
+
+  <!-- Sparkle icon for Claude -->
+  <circle cx="440" cy="143" r="26" fill="#eff6ff"/>
+  <path d="M440,124 L443,136 L455,140 L443,144 L440,156 L437,144 L425,140 L437,136 Z" fill="#3b82f6"/>
+  <circle cx="440" cy="140" r="4.5" fill="#ffffff"/>
+
+  <text x="440" y="196" text-anchor="middle" fill="#1e293b" font-size="13.5" font-weight="600">Claude Knows</text>
+  <text x="440" y="213" text-anchor="middle" fill="#64748b" font-size="11">Phases, deadlines, judging</text>
+  <text x="440" y="228" text-anchor="middle" fill="#64748b" font-size="11">criteria and team tasks.</text>
+
+  <!-- ═══════════════════ ARROW 2 ═══════════════════ -->
+  <text x="595" y="158" text-anchor="middle" fill="#94a3b8" font-size="10" font-style="italic">guides you</text>
+  <line x1="538" y1="168" x2="652" y2="168" stroke="#86efac" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <polygon points="652,168 642,163 642,173" fill="#86efac"/>
+
+  <!-- ═══════════════════ BOX 3: Ship ═══════════════════ -->
+  <rect x="660" y="88" width="180" height="150" rx="12" fill="#ffffff" stroke="#bbf7d0" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="660" y="88" width="180" height="3.5" rx="1.75" fill="#22c55e"/>
+
+  <!-- Rocket icon -->
+  <circle cx="750" cy="143" r="26" fill="#f0fdf4"/>
+  <path d="M750,124 L755,144 L750,148 L745,144 Z" fill="#22c55e"/>
+  <circle cx="750" cy="133" r="4" fill="#ffffff"/>
+  <path d="M755,144 L762,150 L756,148 Z" fill="#16a34a" opacity="0.8"/>
+  <path d="M745,144 L738,150 L744,148 Z" fill="#16a34a" opacity="0.8"/>
+  <path d="M748,148 C748.5,155 750,158 751.5,155 C751.5,159 750,161 748,159 Z" fill="#f97316" opacity="0.9"/>
+  <path d="M752,148 C751.5,155 750,158 748.5,155 C748.5,159 750,161 752,159 Z" fill="#fb923c" opacity="0.8"/>
+
+  <text x="750" y="196" text-anchor="middle" fill="#1e293b" font-size="13.5" font-weight="600">You Ship It</text>
+  <text x="750" y="213" text-anchor="middle" fill="#64748b" font-size="11">Brief to submission</text>
+  <text x="750" y="228" text-anchor="middle" fill="#64748b" font-size="11">in 4 hours.</text>
+
+  <!-- ═══════════════════ PHASE PILLS ═══════════════════ -->
+  <text x="440" y="264" text-anchor="middle" fill="#94a3b8" font-size="9.5" font-weight="600" letter-spacing="1">7 PHASES COVERED</text>
+
+  <!-- pill w=107, gap=8, start x=42 -->
+  <rect x="42"  y="274" width="107" height="24" rx="12" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="95.5"  y="290" text-anchor="middle" fill="#7e22ce" font-size="11" font-weight="500">1  Intake</text>
+
+  <rect x="157" y="274" width="107" height="24" rx="12" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+  <text x="210.5" y="290" text-anchor="middle" fill="#c2410c" font-size="11" font-weight="500">2  Team</text>
+
+  <rect x="272" y="274" width="107" height="24" rx="12" fill="#fefce8" stroke="#fde68a" stroke-width="1"/>
+  <text x="325.5" y="290" text-anchor="middle" fill="#854d0e" font-size="11" font-weight="500">3  Ideas</text>
+
+  <rect x="387" y="274" width="107" height="24" rx="12" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="440.5" y="290" text-anchor="middle" fill="#15803d" font-size="11" font-weight="500">4  Dev Setup</text>
+
+  <rect x="502" y="274" width="107" height="24" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="555.5" y="290" text-anchor="middle" fill="#1d4ed8" font-size="11" font-weight="500">5  Build</text>
+
+  <rect x="617" y="274" width="107" height="24" rx="12" fill="#fdf2f8" stroke="#f9a8d4" stroke-width="1"/>
+  <text x="670.5" y="290" text-anchor="middle" fill="#9d174d" font-size="11" font-weight="500">6  Present</text>
+
+  <rect x="732" y="274" width="107" height="24" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="785.5" y="290" text-anchor="middle" fill="#166534" font-size="11" font-weight="500">7  Submit</text>
+
+</svg>

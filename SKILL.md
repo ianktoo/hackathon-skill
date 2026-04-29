@@ -3,7 +3,7 @@ name: hackathon
 license: MIT
 metadata:
   author: "Ian Too (https://iantoo.space)"
-  version: "1.1.0"
+  version: "1.2.0"
 description: >
   A full end-to-end hackathon coordination skill. Use this skill whenever a user mentions a hackathon, hack day, build competition, or sprint event — even casually (e.g., "we're doing a hackathon this weekend", "I want to prep for a hackfest", "help us organize our hack team"). This skill guides a solo hacker or team through every phase: intake of hackathon details, team formation, idea collection and selection, GitHub repo setup, task assignment, vibe-coding, presentation prep, and final submission. Works in Claude Code, Claude.ai, and any coding agent that supports skills. Trigger this skill even when the user only mentions one phase (e.g., "help us pick an idea for our hackathon") — always load the full skill to understand context and jump in at the right phase.
 ---

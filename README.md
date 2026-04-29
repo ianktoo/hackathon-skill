@@ -1,20 +1,30 @@
 # Hackathon Skill
 
-Ship faster at hackathons. This skill gives Claude the full context it needs to guide you from "we have a hackathon" to "we just submitted" -- without losing momentum.
+![Version](https://img.shields.io/badge/version-1.2.0-a855f7?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)
+![Works with](https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20Claude.ai-3b82f6?style=flat-square)
 
-Built for the 4-hour crunch. Works for solo hackers and teams.
+**Go from "we have a hackathon" to "we just submitted" -- without losing momentum.**
+
+Most hackathon teams lose hours to coordination overhead: picking ideas, setting up repos, figuring out who does what. This skill gives Claude the full context it needs to be a real co-pilot -- not just a code completer. Tell it about your hackathon. It handles the rest, one phase at a time.
 
 Made by [Ian Too](https://iantoo.space)
 
 ---
 
-## What It Does
+## How It Works
 
-Once installed, Claude becomes your hackathon coach, project manager, and coding co-pilot. It walks through every phase in order:
+![How Hackathon Skill Works](how-it-works.svg)
+
+---
+
+## What You Get
+
+Once installed, Claude walks you through every phase in order:
 
 | Phase | What Happens |
 |-------|-------------|
-| 1. Intake | Paste a URL or text -- Claude reads the brief and summarizes the requirements |
+| 1. Intake | Paste a URL or text -- Claude reads the brief and summarizes requirements |
 | 2. Team Formation | Collect names, roles, and GitHub handles. Get a clean team roster |
 | 3. Idea Selection | Each member shares an idea. Claude scores them and recommends one |
 | 4. Dev Setup | Repo structure, git commands, and tasks broken down per person |
@@ -31,6 +41,8 @@ This skill is designed for teams working in parallel:
 3. Everyone works with Claude at the same time -- the repo is the shared source of truth
 4. Phase outputs (TEAM.md, IDEA.md, TASKS.md, etc.) get committed and stay visible to all
 
+---
+
 ## Installation
 
 Pick the option that matches your setup:
@@ -40,8 +52,6 @@ Pick the option that matches your setup:
 ```bash
 claude skills install https://shipables.dev/skills/hackathon
 ```
-
-That's it. Claude Code will fetch and install the skill automatically.
 
 ### Claude.ai (browser)
 
@@ -61,7 +71,7 @@ Most agents that support Agent Skills use the same install command:
 npx @senso-ai/shipables install hackathon
 ```
 
-Or check your agent's skill settings and paste the Shipables URL directly. If your agent supports SKILL.md files, you can also download `SKILL.md` from this repo and drop it into your `.claude/skills/` folder (or wherever your agent looks for skills).
+Or check your agent's skill settings and paste the Shipables URL directly.
 
 ### Manual install (any agent)
 
@@ -69,11 +79,24 @@ Or check your agent's skill settings and paste the Shipables URL directly. If yo
 2. Place it in your project under `.claude/skills/hackathon/SKILL.md`
 3. Restart your agent session -- it will pick up the skill automatically
 
-## Files Included
+---
+
+## Usage
+
+Just start talking:
+
+> "We have a hackathon this weekend, help us get organized."
+> "I'm doing a solo hackathon, here's the brief: [paste]"
+> "We're mid-hackathon and need to pick an idea."
+
+Claude will detect where you are and jump into the right phase.
+
+## Files
 
 ```
 hackathon-skill/
 ├── SKILL.md                    -- Main skill (all 7 phases)
+├── how-it-works.svg            -- Diagram
 ├── README.md                   -- This file
 └── references/
     ├── github-setup.md         -- Git commands for repo and collaborator setup
@@ -85,16 +108,6 @@ hackathon-skill/
 - Works in Claude Code, Claude.ai, and any coding agent that supports skills
 - GitHub CLI (`gh`) optional but recommended for repo creation
 - No other dependencies
-
-## Usage
-
-Just start talking:
-
-> "We have a hackathon this weekend, help us get organized."
-> "I'm doing a solo hackathon, here's the brief: [paste]"
-> "We're mid-hackathon and need to pick an idea."
-
-Claude will detect where you are and jump into the right phase.
 
 ---
 
